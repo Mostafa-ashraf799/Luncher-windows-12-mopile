@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Windows 12 Color Scheme -->
+    <color name="windows_blue">#0078D4</color>
+    <color name="windows_dark_blue">#005A9E</color>
+    <color name="windows_light_blue">#50B4FF</color>
+    
+    <!-- Background Colors -->
+    <color name="primary_bg">#1E1E1E</color>
+    <color name="secondary_bg">#2D2D2D</color>
+    <color name="taskbar_bg">#CC1E1E1E</color>
+    <color name="status_bar_bg">#DD000000</color>
+    <color name="start_menu_bg">#E61E1E1E</color>
+    
+    <!-- Tile Colors -->
+    <color name="tile_bg">#3D3D3D</color>
+    <color name="tile_pressed">#4D4D4D</color>
+    <color name="tile_accent">#0078D4</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#CCCCCC</color>
+    <color name="text_disabled">#808080</color>
+    
+    <!-- System Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_blue">#0078D4</color>
+    <color name="accent_green">#107C10</color>
+    <color name="accent_red">#E81123</color>
+    <color name="accent_orange">#FF8C00</color>
+</resources>

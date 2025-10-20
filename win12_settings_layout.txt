@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/secondary_bg"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:padding="12dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- System Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="System"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingSystem" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingDisplay" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingSound" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingBattery" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/text_disabled" />
+
+            <!-- Network Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Network & Connectivity"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingWifi" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingBluetooth" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/text_disabled" />
+
+            <!-- Apps Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Apps & Storage"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingApps" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingStorage" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/text_disabled" />
+
+            <!-- Security Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Security & Privacy"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingSecurity" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/text_disabled" />
+
+            <!-- Launcher Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Launcher"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingLauncher" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/text_disabled" />
+
+            <!-- About Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="About"
+                android:textColor="@color/accent_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/settings_item"
+                android:id="@+id/settingAbout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
